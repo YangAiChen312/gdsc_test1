@@ -1,19 +1,19 @@
-	# 先導入後面會用到的套件
+# 先導入後面會用到的套件
 import requests # 請求工具
 from bs4 import BeautifulSoup # 解析工具
 import time # 用來暫停程式
  
 # 要爬的股票
-stock = ["1101","2330"]
+stock = ["1101","2330","2454"]
 	for i in range(len(stock)): # 迴圈依序爬股價
 
-	    # 現在處理的股票
+            # 現在處理的股票
 
 	    stockid = stock[i]
 
 	    # 網址塞入股票編號
 
-	    url = "https://tw.stock.yahoo.com/quote/"+stockid+".TW"
+	    url = "https://tw.stock.yahoo.com/quote/2454.TW"
 
 	    # 發送請求
 
@@ -34,11 +34,11 @@ stock = ["1101","2330"]
 
 	    # bot token
 
-	    token = "輸入你的 bot token"
+	    token = "7768108860:AAGVbU9Tj_DAGHcieF2zzlgVSJHHsTfwCqw"
 
 	    # 使用者 id
 
-	    chat_id="輸入你的 telegram id"
+	    chat_id="@VeryGoodStockAssistantv_bot"
 
 	    # bot 送訊息
 
