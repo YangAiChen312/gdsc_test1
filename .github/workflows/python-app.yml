@@ -5,7 +5,7 @@ import time  # 用來暫停程式
 from urllib.parse import quote_plus  # 如果 message 包含特殊字符（如空格、符號等），需要使用 urllib.parse.quote_plus()
 
 # 要爬的股票
-stock = ["1101", "2330"]
+stock = ["1101", "2330","2454"]
 
 for i in range(len(stock)):  # 迴圈依序爬股價
     
@@ -13,7 +13,7 @@ for i in range(len(stock)):  # 迴圈依序爬股價
     stockid = stock[i]
 
     # 網址塞入股票編號
-    url = "https://tw.stock.yahoo.com/quote/" + stockid + ".TW"
+    url = "https://tw.stock.yahoo.com/quote/2454.TW"
 
     # 發送請求
     r = requests.get(url)
@@ -38,10 +38,10 @@ for i in range(len(stock)):  # 迴圈依序爬股價
 
         # 用 telegram bot 回報股價
         # bot token
-        token = "NUMBER"
+        token = "7768108860:AAGVbU9Tj_DAGHcieF2zzlgVSJHHsTfwCqw"
 
         # 使用者 id
-        chat_id = "1234567890"
+        chat_id = "HAHAHAHA312"
 
         # bot 送訊息，記得對 message 進行 URL 編碼
         telegram_url = f"https://api.telegram.org/bot{token}/sendMessage?chat_id={chat_id}&text={quote_plus(message)}"
