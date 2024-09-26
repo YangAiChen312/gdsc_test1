@@ -41,7 +41,7 @@ for i in range(len(stock)):  # 迴圈依序爬股價
         token = "7768108860:AAGVbU9Tj_DAGHcieF2zzlgVSJHHsTfwCqw"
 
         # 使用者 id
-        chat_id = "HAHAHAHA312"
+        chat_id = "7835854615"
 
         # bot 送訊息，記得對 message 進行 URL 編碼
         telegram_url = f"https://api.telegram.org/bot{token}/sendMessage?chat_id={chat_id}&text={quote_plus(message)}"
