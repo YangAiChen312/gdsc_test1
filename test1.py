@@ -38,7 +38,7 @@ stock = ["1101","2330","2454"]
 
 	    # 使用者 id
 
-	    chat_id="@VeryGoodStockAssistantv_bot"
+	    chat_id="7835854615"
 
 	    # bot 送訊息
 
